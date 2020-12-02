@@ -25,6 +25,10 @@ h3
     color:#ffffff;
     
 }
+#w3-cell-row{
+    min-height: fit-content;
+max-height: fit-content;
+}
 #icon
 {
 
