@@ -25,10 +25,7 @@ h3
     color:#ffffff;
     
 }
-#w3-cell-row{
-    min-height: fit-content;
-max-height: fit-content;
-}
+
 #icon
 {
 
@@ -47,9 +44,23 @@ max-height: fit-content;
     animation-iteration-count: 2;
 
 }
+#icon:active
+{
+    animation-name: iconactive;
+    animation-duration: 800ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
 
 @keyframes iconhover
 {
     from{}
     to {text-shadow: 0px 0px 10px #ffffff;}
+}
+
+@keyframes iconactive
+{
+    0%{text-shadow: 0px 0px 0px #ffffff;}
+    50% {top:50px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); text-shadow: 0px 0px 50px #ffffff;}
+    100% {top:0px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); text-shadow: 0px 0px 0px #ffffff;}
 }
