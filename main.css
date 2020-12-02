@@ -3,6 +3,7 @@ body{
 }
 header {
     font-family: 'Archivo';
+    font-size: 80px;
     position: sticky;
     background-color: whitesmoke;
     padding: 25px;
@@ -16,13 +17,23 @@ p1{
     font-size: 48px;
     font-weight: bolder;
 }
+p{
+    color: aliceblue;   
+}
+h3
+{
+    color:aliceblue;
+    font-size: 80px;
+}
 #icon
 {
 
     font-size: 100px;
     color: white;
     position: initial;
-    padding:20px;
+    padding:0px;
+    width:100%;
+
 }
 #icon:hover
 {
@@ -36,5 +47,5 @@ p1{
 @keyframes iconhover
 {
     from{}
-    to {text-shadow: 0px 0px 10px rgb(148, 214, 240);}
+    to {text-shadow: 0px 0px 10px aliceblue;}
 }
