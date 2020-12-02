@@ -58,9 +58,16 @@ h3
     to {text-shadow: 0px 0px 10px #ffffff;}
 }
 
-@keyframes iconactive
-{
-    0%{text-shadow: 0px 0px 0px #ffffff;}
-    50% {top:50px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); text-shadow: 0px 0px 50px #ffffff;}
-    100% {top:0px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); text-shadow: 0px 0px 0px #ffffff;}
-}
+
+.sidepanel {
+    height: 250px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
