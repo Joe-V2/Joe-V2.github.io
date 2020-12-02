@@ -6,13 +6,24 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <header class="w3-container w3-card">
+  <script >
+    
+    if( window.innerWidth >= "1324px")
+    {
+      document.getElementById("sidepanel").style.width = toString(window.width-300) + "px";
+    }
+    else
+    {
+      document.getElementById("sidepanel").style.width = window.width;
+    }
+  </script>
+    <header class="w3-container w3-card"  style="position:sticky; position:-webkit-sticky" >
         <h1>Joe Greaney</h1>
       </header>
+      <div id="sidepanel" class="sidepanel"></div>
       <div class="w3-container">
         <hr>
         <div class="w3-cell-row">
