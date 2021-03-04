@@ -32,35 +32,39 @@ h3
     font-size: 100px;
     color: white;
     position: initial;
-    padding:0px;
+    padding:10%;
     width:100%;
+    transform-origin: center; -webkit-transform-origin: center; 
 
 }
 #icon:hover
 {
-    animation-name: iconhover;
-    animation-duration: 250ms;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
+    animation: iconclicked 250ms alternate 2;
 
 }
 #icon:active
 {
-    animation-name: iconactive;
-    animation-duration: 800ms;
-    animation-direction: normal;
-    animation-iteration-count: 1;
+    animation: iconactive 250ms forwards;
+}
+#icon:not(:active)
+{
+    animation: iconclicked 250ms forwards;
 }
 
 @keyframes iconhover
 {
-    from{}
+    from{text-shadow: 0px 0px 0px #ffffff;}
     to {text-shadow: 0px 0px 10px #ffffff;}
+}
+
+@keyframes iconclicked
+{
+    from{text-shadow: 0px 0px 50px #ffffff;}
+    to{text-shadow: 0px 0px 0px #ffffff;}
 }
 
 @keyframes iconactive
 {
-    0%{text-shadow: 0px 0px 0px #ffffff;}
-    50% {top:50px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); text-shadow: 0px 0px 50px #ffffff;}
-    100% {top:0px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); text-shadow: 0px 0px 0px #ffffff;}
+    from{text-shadow: 0px 0px 0px #ffffff;}
+    to{text-shadow: 0px 0px 50px #ffffff;}
 }
