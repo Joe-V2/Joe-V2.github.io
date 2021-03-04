@@ -26,15 +26,20 @@ h3
     
 }
 
+.w3-cell-middle
+{
+
+}
+
 #icon
 {
 
     font-size: 100px;
     color: white;
     position: initial;
-    padding:20%;
+    padding:15%;
     width:100%;
-    transform-origin: center; -webkit-transform-origin: center; 
+
 
 }
 
