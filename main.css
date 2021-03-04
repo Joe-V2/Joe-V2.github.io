@@ -37,9 +37,22 @@ h3
     transform-origin: center; -webkit-transform-origin: center; 
 
 }
+#a:hover
+{
+    animation: iconhover 250ms forwards;
+}
+#a:active
+{
+    animation: iconactive 250ms forwards;
+}
+#a:not(:active)
+{
+    animation: iconclicked 250ms forwards;
+}
+
 #icon:hover
 {
-    animation: iconclicked 250ms alternate 2;
+    animation: iconhover 250ms forwards;
 
 }
 #icon:active
@@ -53,8 +66,9 @@ h3
 
 @keyframes iconhover
 {
-    from{text-shadow: 0px 0px 0px #ffffff;}
-    to {text-shadow: 0px 0px 10px #ffffff;}
+    0%{text-shadow: 0px 0px 0px #ffffff;}
+    25% {text-shadow: 0px 0px 10px #ffffff;}
+    100%{text-shadow: 0px 0px 0px #ffffff;}
 }
 
 @keyframes iconclicked
