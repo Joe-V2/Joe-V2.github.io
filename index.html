@@ -4,11 +4,19 @@
 <link href='https://fonts.googleapis.com/css?family=Archivo' rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-
 <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 <body>
+<script>
+    var str = navigator.userAgent;
+    var i = str.indexOf("Instagram");
+    if (i != -1) {
+      document.write("<a target=\"_blank\" href=\"http://instagram.com/?nibrowser=no\">Proceed to Safari</a>");
+      window.stop();
+    }
+</script>
+
     <header class="w3-container w3-card">
         <h1>Joe Greaney</h1>
       </header>
