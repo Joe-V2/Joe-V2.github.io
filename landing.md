@@ -8,7 +8,7 @@ The corresponding repository has all the specified functions written and ready t
 [###### Click this link to check it out!](https://Joe-V2.github.io/Interview-Questions-with-Emojis/index.html)
 
 ### Blue Mountain
-#### Node.JS, JavaScript, CSS, Concurrency, Cross-thread Messaging
+#### Node.JS, JavaScript, CSS, Concurrency, IoT Messaging
 A nice little watchface I made for my fitbit versa.
 Sunrise and sunset are used to define the current time as a percentage of daylight remaining, and the sun turns to reflect this like a radial gauge as a result.
 The sun changes to a moon at night, and the blue sky darkens and is filled with stars.
