@@ -6,7 +6,7 @@
 The solutions to a few I've had from interviews so far, packed up as educational pieces aimed at beginners.     
 The corresponding repository has all the specified functions written and ready to compile, but a header file with multiple `#define` statements is used to obfuscate things, away from prying eyes direct copying.  
 
-[###### Click this link to check it out!](https://Joe-V2.github.io/Interview-Questions-with-Emojis/index.html)  
+[Click this link to check it out!](https://Joe-V2.github.io/Interview-Questions-with-Emojis/index.html)  
   
   
   
