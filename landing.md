@@ -3,7 +3,8 @@
 ## JavaScript Data Visualisation  
 #### JavaScript, D3.js  
 A couple of graphs I made for the visualisation module of my Computer Science Bachelor's.  
-Whilst the demo data in the radar chart is intrinsic to its HTML accompaniment, the LHOC chart reads from a csv instead - neat, eh?  
+Whilst the demo data in the radar chart is intrinsic to its HTML accompaniment, the LHOC chart reads from a csv instead.    
+You can hover your mouse over the regions in the radar chart, or try scrolling/zooming into the LHOC graph for even more fun - mathematical!
   
 [Click this link to see the radar chart!](<https://Joe-V2.github.io/assets/Radar Files/radar.htm>)  
 [Click this link to see the LHOC chart!](<https://Joe-V2.github.io/assets/Box Plot Files/index.html>)  
