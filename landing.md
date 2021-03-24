@@ -28,4 +28,4 @@ The program itself predicts whether or not a patient is at immediate risk of car
 Everything from taxonomy and cleaning to modelling and accuracy comparison is fully automated, and spits everything out as a CSV at the end - great for making your own graphs to show the board.  
 It does only work on the data that follows the headings in the accompanying CSV and trains on a 70-30 split, but with some more work, I don't see any reason why it couldn't do it for any CSV by abstracting the headings - that's the only thing holding it back!
 
-[Click this link to check it out!](https:://Joe-V2.github.io/Fatality-Classifier/index.html)
+[Click this link to check it out!](https://Joe-V2.github.io/Fatality-Classifier/index.html)
