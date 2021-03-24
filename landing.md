@@ -1,9 +1,16 @@
 # Repositories
 
+## JavaScript Data Visualisation
+#### JavaScript, D3.js
+A couple of graphs I made for the visualisation module of my Computer Science Bachelor's.
+Whilst the demo data in the radar chart is intrinsic to its HTML accompaniment, the LHOC chart reads from a csv instead - neat, eh?
+
+[Click this link to see the radar chart!](<https://Joe-V2.github.io/assets/Radar Files/radar.htm>)  
+[Click this link to see the LHOC chart!](<https://Joe-V2.github.io/assets/Box Plot Files/index.html>)
 
 ## Interview Questions with Emojis
 #### C++, Bitwise Operators, Nested Logic
-The solutions to a few I've had from interviews so far, packed up as educational pieces aimed at beginners.     
+The solutions to a few questions I've had from interviews so far, packed up as educational pieces aimed at beginners.     
 The corresponding repository has all the specified functions written and ready to compile, but a header file with multiple `#define` statements is used to obfuscate things, away from prying eyes direct copying.  
 
 [Click this link to check it out!](https://Joe-V2.github.io/Interview-Questions-with-Emojis/index.html)  
