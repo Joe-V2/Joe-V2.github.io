@@ -1,0 +1,153 @@
+<!-- Begin Reference - Modified and Copied Code
+
+Kuerzibe (2019) Radar chart d3 v5. Javascript and HTML code example. Available online: http://bl.ocks.org/Kuerzibe/338052519b1d270b9cd003e0fbfb712e [Accessed 2/06/2020]
+Used under the MIT License.
+
+Modifications made:
+
+	- Lines 59-105: modified to include the required data supplied as part of the ACW, ordered according to volume.
+	- Lines 119 and 137: ordinal scales modified to accomodate the use of desired colours.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Smoothed Radar Chart</title>
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+		<script src="https://d3js.org/d3-path.v1.min.js" charset="utf-8"></script>
+		<script src="radarChart.js" charset="utf-8"></script>
+		<style>
+			body {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 11px;
+				font-weight: 300;
+				fill: #242424;
+				text-align: center;
+				text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+				cursor: default;
+			}
+
+			.legend {
+				font-family: 'Raleway', sans-serif;
+				fill: #333333;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="radarChart2" style="display: inline-flex;"></div>
+		<script>
+			//////////////////////////////////////////////////////////////
+			//////////////////////// Set-Up //////////////////////////////
+			//////////////////////////////////////////////////////////////
+
+			var margin = { top: 50, right: 105, bottom: 50, left: 105 },
+				width = Math.min(700, window.innerWidth / 4) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom);
+
+			//////////////////////////////////////////////////////////////
+			////////////////////////// Data //////////////////////////////
+			//////////////////////////////////////////////////////////////
+
+			            var data = [
+                    {name: 'Hospital 5', axes: [ 
+                        {axis: "Running costs (£100 per week)", value: 450},
+                        {axis: "Total beds", value: 420},
+                        {axis: "Total nurses", value: 400},  
+                        {axis: "Total consultants", value: 60},  
+                    ],      
+color: '#2a2adb' }					
+                    ,
+                    {name: 'Hospital 4', axes: [
+                        {axis: "Running costs (£100 per week)", value: 350},
+                        {axis: "Total beds", value: 480},
+                        {axis: "Total nurses", value: 250},  
+                        {axis: "Total consultants", value: 50},  
+                    ]
+                    ,      
+color: '#2adbdb' }	,
+
+                    { name: 'Hospital 3', axes: [
+                        {axis: "Running costs (£100 per week)", value: 300},
+                        {axis: "Total beds", value: 180},
+                        {axis: "Total nurses", value: 350},  
+                        {axis: "Total consultants", value: 40},  
+                    ]
+
+                                        ,      
+color: '#dbdb2a' }	,
+{ name: 'Hospital 1', axes: [
+                        {axis: "Running costs (£100 per week)", value: 200},
+                        {axis: "Total beds", value: 300},
+                        {axis: "Total nurses", value: 200},  
+                        {axis: "Total consultants", value: 30},  
+                    ]
+                                        ,      
+color: '#2aa32c' }	,
+                    { name: 'Hospital 2', axes: [
+                        {axis: "Running costs (£100 per week)", value: 150},
+                        {axis: "Total beds", value: 120},
+                        {axis: "Total nurses", value: 300},  
+                        {axis: "Total consultants", value: 20},  
+                    ]
+                                         ,      
+color: '#db2a2a' }	                   
+
+					];
+      
+      console.log(data[0].color);
+
+			//////////////////////////////////////////////////////////////
+			////// First example /////////////////////////////////////////
+            ////// (not so much options) /////////////////////////////////
+			//////////////////////////////////////////////////////////////
+			var radarChartOptions = {
+			  w: 290,
+			  h: 350,
+			  margin: margin,
+			  levels: 5,
+			  roundStrokes: true,
+				color: d3.scaleOrdinal().range(["#2a2adb","#2adbdb","#2aa32c","#dbdb2a","#db2a2a"]),
+				format: '.0f'
+			};
+
+			// Draw the chart, get a reference the created svg element :
+			let svg_radar1 = RadarChart(".radarChart", data, radarChartOptions);
+
+			//////////////////////////////////////////////////////////////
+			///// Second example /////////////////////////////////////////
+			///// Chart legend, custom color, custom unit, etc. //////////
+			//////////////////////////////////////////////////////////////
+			var radarChartOptions2 = {
+			  w: 600,
+			  h: 900,
+			  margin: margin,
+			  maxValue: 60,
+			  levels: 8,
+			  roundStrokes: false,
+			  color: d3.scaleOrdinal().range(["#2a2adb","#2adbdb","#2aa32c","#dbdb2a","#db2a2a"]),
+				format: '.0f',
+				legend: { title: 'Hospital Key', translateX: 100, translateY: 40 },
+				unit: '$'
+			};
+
+			// Draw the chart, get a reference the created svg element :
+			let svg_radar2 = RadarChart(".radarChart2", data, radarChartOptions2);
+		</script>
+	</body>
+</html>
+
+<!--
+
+End Reference 
+
+-->
