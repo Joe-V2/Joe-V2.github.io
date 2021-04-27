@@ -12,7 +12,7 @@ Available powerups include:
       
 [Click this link to see a video preview!](https://www.youtube.com/watch?v=vEWkxCHSLh8&feature=youtu.be)   
 [Click this link to download a version from the releases page!](https://github.com/Joe-V2/tanks/releases/tag/v1.0.0)   
-[Click this link to read more about it!)[(https://joe-v2.github.io/tanks/index.html)      
+[Click this link to read more about it!](https://joe-v2.github.io/tanks/index.html)      
     
     
     
