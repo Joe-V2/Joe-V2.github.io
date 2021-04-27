@@ -1,5 +1,21 @@
-# Repositories
-  
+# Repositories    
+    
+## Tanks: A Multiplayer Top-Down Shooter   
+#### C#, Unity, Game Mechanics   
+A top-down tank shooting game that supports one to four players at a time, using Xbox 360 controllers for input. Each player has a unique colour, which is passed into all sprites associated with their tank - and a unique horn sound, for honking and taunting other players. The game relies on a player using powerups to eliminate enemy tanks to score points, which are rendered as grey sprites controlled by an AI, using a linked list of navigation nodes. In the interests of balance, players may shoot one bullet at a time, being able to fire again when it has embedded itself in a wall or an enemy - and all powerups wear off after twelve seconds, or upon a player's death.      
+   
+Available powerups include:    
+- Mines - lay up to five at a time before the buff wears off!    
+- Bouncing bullets - vector maths and reflections make your bullets bounce, up to a maximum of five times.   
+- Power bullets - shoot the terrain to blow holes in the enemy cover walls!   
+- Multi shot - fire two bullets at a time, instead of just the one.   
+      
+[Click this link to see a video preview!](https://www.youtube.com/watch?v=vEWkxCHSLh8&feature=youtu.be)   
+[Click this link to download a version from the releases page!](https://github.com/Joe-V2/tanks/releases/tag/v1.0.0)   
+[Click this link to go to the source code, and view the commit/merge history!](https://github.com/Joe-V2/tanks/)     
+    
+    
+    
 ## JavaScript Data Visualisation  
 #### JavaScript, D3.js  
 A couple of graphs I made for the visualisation module of my Computer Science Bachelor's.  
