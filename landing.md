@@ -1,4 +1,12 @@
-# Repositories    
+# Super Monky Adventure 2077
+## A side-scrolling, twin stick, monkey-themed shoot-em-up
+### C#, Unity, Android
+
+A short shooting game I made, which kickstarted my professional development career.
+Developed, scored and designed for Android - but uses Unity's device information APIs to enable support across multiple build platforms. Integrates the Unity Advertisments SDK as a technical exercise.
+[Click this link to go to its page on the Google Play store!](https://play.google.com/store/apps/details?id=com.JoeSoft.SuperMonkyAdventure2077)
+
+# Other Repositories    
     
 ## Tanks: A Multiplayer Top-Down Shooter  
 #### C#, Unity, Game Mechanics   
