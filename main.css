@@ -83,7 +83,7 @@ h3
 @keyframes hide
 {
     0% {opacity: 100; transform:translateX(0px); -webkit-transform:translateX(0px);}
-    100% {opacity: 0; transform:translateX(350px);  -webkit-transform:translateX(-350px);}
+    100% {opacity: 0; transform:translateX(350px);  -webkit-transform:translateX(350px);}
 }
 @keyframes show
 {
