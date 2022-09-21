@@ -38,11 +38,9 @@ h3
 
 }
 
-
 #icon:hover
 {
     animation: iconhover 250ms forwards;
-
 }
 #icon:active
 {
@@ -53,21 +51,50 @@ h3
     animation: iconclicked 250ms forwards;
 }
 
+
+
 @keyframes iconhover
 {
-    0%{text-shadow: 0px 0px 0px #ffffff;}
-    25% {text-shadow: 0px 0px 10px #ffffff;}
-    100%{text-shadow: 0px 0px 0px #ffffff;}
+    0%  {transform:rotateZ(0);}
+    25% {transform:rotateZ(15);}
+    35% {transform:rotateZ(-15);}
+    45% {transform:rotateZ(0);}
+    100% {transform:rotateZ(0);}
+}
+@keyframes sectionhover
+{
+    0%{background-color: rgb(44, 44, 44); color:#ffffff;}
+    25% {background-color: #ffffff; color: rgb(44, 44, 44);}
+    100%{background-color: rgb(44, 44, 44); color:#ffffff;}
 }
 
 @keyframes iconclicked
 {
-    from{text-shadow: 0px 0px 50px #ffffff;}
-    to{text-shadow: 0px 0px 0px #ffffff;}
+    0%{text-shadow: 0px 0px 50px #ffffff;}
+    100%{text-shadow: 0px 0px 0px #ffffff;}
 }
 
 @keyframes iconactive
 {
-    from{text-shadow: 0px 0px 0px #ffffff;}
-    to{text-shadow: 0px 0px 50px #ffffff;}
+    0%{text-shadow: 0px 0px 0px #ffffff;}
+    100%{text-shadow: 0px 0px 50px #ffffff;}
 }
+
+@keyframes hide
+{
+    0% {opacity: 100; transform:translateX(0px);}
+    100% {opacity: 0; transform:translateX(350px);}
+}
+@keyframes show
+{
+    0% {opacity: 0; transform:translateX(-350px);}
+    100% {opacity: 100; transform:translateX(0px);;}
+}
+
+.reveal.active{
+    
+    animation: show 1s forwards;
+  }
+  .reveal:not(.active){
+    animation: hide 250ms forwards;
+  }
