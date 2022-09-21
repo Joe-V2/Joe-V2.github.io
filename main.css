@@ -1,5 +1,6 @@
 body{
     background-color: rgb(44, 44, 44);
+    overflow-x: hidden;
 }
 header {
     font-family: 'Archivo';
