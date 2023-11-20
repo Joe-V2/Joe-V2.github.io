@@ -1,0 +1,3 @@
+[submodule "submodules/FuelEfficiencyCalculator"]
+	path = submodules/FuelEfficiencyCalculator
+	url = https://github.com/Joe-V2/FuelEfficiencyCalculator.git
