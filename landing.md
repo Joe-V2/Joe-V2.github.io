@@ -24,8 +24,8 @@ Available powerups include:
     
     
     
-## [JavaScript Data Visualisation  
-#### JavaScript, D3.js  
+## JavaScript Data Visualisation  
+#### JavaScript, HTML, D3.js  
 A couple of graphs I made for the visualisation module of my Computer Science Bachelor's.  
 Whilst the demo data in the radar chart is intrinsic to its HTML accompaniment, the LHOC chart reads from a csv instead.    
 You can hover your mouse over the regions in the radar chart, or try scrolling/zooming into the LHOC graph for even more fun - mathematical!
